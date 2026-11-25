@@ -1,0 +1,186 @@
+/* 全体 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #e8eaf6;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* アプリ全体 */
+.app {
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+/* ヘッダー */
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+  background-image: url('/live-arena.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+
+.header h1,
+.header p {
+  position: relative;
+  z-index: 1;
+}
+.header-text {
+  display: inline-block;
+  text-align: center;
+}
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.header p {
+  color: #a5b4fc;
+  font-size: 16px;
+}
+
+/* メイン */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 登録フォーム */
+.form-section {
+  background: #161d33;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #303a5c;
+  margin-bottom: 35px;
+}
+
+.form-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  color: #c7d2fe;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #394568;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ボタン */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* 記録一覧 */
+.records-section h2 {
+  margin-bottom: 20px;
+}
+
+.empty {
+  color: #94a3b8;
+  text-align: center;
+  padding: 30px;
+}
+
+/* 記録カード */
+.record-card {
+  background: #161d33;
+  border: 1px solid #303a5c;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.record-card h3 {
+  color: #a5b4fc;
+  margin-top: 0;
+}
+
+.record-card p {
+  line-height: 1.6;
+}
+
+/* 削除ボタン */
+.delete-button {
+  background: #991b1b;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .form-section {
+    padding: 18px;
+  }
+}.form-section h2,
+.records-section h2 {
+  color: #ffffff;
+}
+
+.record-card h3 {
+  color: #a5b4fc;
+}
+
+.form-section {
+  color: #e8eaf6;
+}
