@@ -71,5 +71,5 @@ Music Logは、個人で使用する音楽練習記録アプリです。
 | memo | メモ |
 
 ## 画面イメージ
-
-アプリの画面スクリーンショットを掲載予定です。
+![Music Logの画面](screenshots/music-log-main.jpg)
+![練習記録一覧](screenshots/music-log-list.jpg)
