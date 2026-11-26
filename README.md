@@ -44,14 +44,28 @@ Music Logは、個人で使用する音楽練習記録アプリです。
 - Visual Studio Code
 - Git
 - GitHub
+## データベース設計
+
+### ER図
+
+```mermaid
+erDiagram
+    PRACTICE_RECORDS {
+        BIGINT id PK
+        VARCHAR practice_date
+        INTEGER duration_minutes
+        VARCHAR content
+        VARCHAR memo
+    }
+    ```
 
 ## 起動方法
 
 ### バックエンド
 
 1. MySQLを起動する
-2. Spring Bootアプリケーションを起動する
-
+2.  backendフォルダでターミナルを開く
+3. `.\mvnw.cmd spring-boot:run` を実行する
 ### フロントエンド
 
 1. frontendフォルダでターミナルを開く
@@ -72,7 +86,7 @@ Music Logは、個人で使用する音楽練習記録アプリです。
 |---|---|
 | id | 練習記録ID |
 | practice_date | 練習日 |
-| duration | 練習時間（分） |
+| duration_minutes | 練習時間（分） |
 | content | 練習内容 |
 | memo | メモ |
 
