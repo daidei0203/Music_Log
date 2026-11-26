@@ -57,8 +57,7 @@ erDiagram
         VARCHAR content
         VARCHAR memo
     }
-    ```
-
+```
 ## 起動方法
 
 ### バックエンド
