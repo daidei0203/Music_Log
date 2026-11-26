@@ -91,5 +91,13 @@ erDiagram
 | memo | メモ |
 
 ## 画面イメージ
-![Music Logの画面](screenshots/music-log-main.jpg)
+
+### 練習記録の登録画面
+練習日・練習時間・練習内容・メモを入力して記録を登録します。
+
+![Music Logのメイン画面](screenshots/music-log-main.jpg)
+
+### 練習記録一覧画面
+登録した練習記録を確認し、不要な記録を削除できます。
+
 ![練習記録一覧](screenshots/music-log-list.jpg)
